@@ -18,24 +18,19 @@ int main()
         cin >> n;
         string s;
         cin >> s;
-        if(s.size()==1)
-            cout << "Ramos" << endll;
-        else
+        int one = 0, zero = 0;
+        for (int i = 0; i < n; i++)
         {
-            bool flag = true;
-            for (int i = 0; i < n; i++)
-            {
-                if(s[i]=='0')
-                    flag = false;
-            }
-            if(flag)
-                cout << "Ramos" << endll;
+            if(s[i]=='0')
+                zero++;
             else
-                cout << "Zlatan" << endll;
-
-
+                one++;
         }
-        
+        if(min(zero, one)%2)
+            cout << "Zlatan" << endll;
+        else
+            cout << "Ramos" << endll;
+
     }
     return 0;
 }
