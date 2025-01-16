@@ -5,21 +5,7 @@ using namespace std;
 #define Y cout << "YES" << endll
 #define no cout << "NO" << endll
 #define nl cout << endll
-// map<int, int> mp;
-// void fun(int n)
-// {
-//     for (int i = 2; i*i <= n; i++)
-//     {
-//         while(n%i==0)
-//         {
-//             n = n/i;
-//             mp[i]++;
-//         }
-//     }
-//     if(n>1)
-//         mp[n]++;
-    
-// }
+
 int main()
 {
     ios::sync_with_stdio(0);
